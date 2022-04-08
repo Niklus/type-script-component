@@ -54,7 +54,7 @@ link your typescript file and it will run on the browser. Using the official typ
 
 ### Node Modules
 
-- Run `npm install type-script-component --save`
+- Run `npm install type-script-webcomponent --save`
 - Put a script tag similar to this `<script type='module' src='node_modules/type-script-webcomponent/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
