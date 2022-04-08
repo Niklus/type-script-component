@@ -1,6 +1,6 @@
 {
   "name": "type-script-webcomponent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "typescript web component",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
