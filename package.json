@@ -1,6 +1,6 @@
 {
   "name": "type-script-webcomponent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "typescript web component",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -31,7 +31,6 @@
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
-    "babel-minify": "^0.5.1",
     "jest": "^27.4.5",
     "jest-cli": "^27.4.5",
     "puppeteer": "^10.0.0"
