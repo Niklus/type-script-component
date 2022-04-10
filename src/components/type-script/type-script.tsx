@@ -1,6 +1,6 @@
 import { Component, Prop, Element } from '@stencil/core';
 import Dexie from 'dexie';
-import { uglify } from '../../utils/uglifyjs.1.2.5';
+import { local } from '../../utils/lib.uglifyjs';
 
 @Component({
   tag: 'type-script',
@@ -57,12 +57,7 @@ export class TypeScript {
         const firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        let interval = setInterval(() => {
-          if (window['ts']) {
-            clearInterval(interval);
-            this.loadTsFile(window['ts']);
-          }
-        }, 500);
+        this.loadTsFile(window['ts']);
       } else {
         console.log('Getting from network');
         this.loadLibrary()
@@ -98,7 +93,7 @@ export class TypeScript {
         });
 
         const tag = document.createElement('script');
-        tag.textContent = this.minify === 'true' ? uglify(jsCode) : jsCode;
+        tag.textContent = this.minify === 'true' ? local.uglify(jsCode) : jsCode;
 
         this.el.append(tag);
       });
@@ -118,7 +113,7 @@ export class TypeScript {
           clearInterval(interval);
           resolve(window['ts']);
         }
-      }, 500);
+      }, 100);
     });
   }
 

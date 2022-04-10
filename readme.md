@@ -12,7 +12,7 @@ link your typescript file and it will run on the browser. Using the official typ
 ### Add the following script tag in the head of your .html page. The type should be module
 
 ```html
-<script type="module" src="https://unpkg.com/type-script-webcomponent@0.0.4/dist/type-script-component/type-script-component.esm.js"></script>
+<script type="module" src="https://unpkg.com/type-script-webcomponent@0.0.5/dist/type-script-component/type-script-component.esm.js"></script>
 ```
 
 ### Then in your html
@@ -49,7 +49,7 @@ link your typescript file and it will run on the browser. Using the official typ
 
 ### The Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/type-script-webcomponent@0.0.4/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/type-script-webcomponent@0.0.5/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
