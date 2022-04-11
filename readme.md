@@ -2,8 +2,9 @@
 
 # type-script web component
 
-This is a web Component that lets you run typescript on the browser. Just like a script tag, you
-link your typescript file and it will run on the browser. Using the official typescript transpiler - It does all the transpilation behind the scenes and also minifies the injected javascript if you set the minification option to true.
+This is a Web Component that lets you run typescript on the browser. Just like any other script tag, you
+link your typescript file and it will run on the browser. The component uses the official typescript transpiler - It does all the transpilation behind the scenes and also minifies the javascript if you set the minification option to true. To see this in action open up devtools and check the typescript tags to see the
+injected Javascript.
 
 ```html
 <type-script src="app.ts" minify="true"></type-script>
@@ -12,7 +13,7 @@ link your typescript file and it will run on the browser. Using the official typ
 ### Add the following script tag in the head of your .html page. The type should be module
 
 ```html
-<script type="module" src="https://unpkg.com/type-script-webcomponent@0.0.5/dist/type-script-component/type-script-component.esm.js"></script>
+<script type="module" src="https://unpkg.com/type-script-webcomponent@0.0.6/dist/type-script-component/type-script-component.esm.js"></script>
 ```
 
 ### Then in your html
@@ -50,7 +51,7 @@ link your typescript file and it will run on the browser. Using the official typ
 
 ### The Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/type-script-webcomponent@0.0.5/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/type-script-webcomponent@0.0.6/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
