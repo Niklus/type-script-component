@@ -37,7 +37,7 @@ Just like any other script tag, you link your typescript file and it will run in
 - The code is not minified by default and the target is es6. If you choose to minify by setting minify to true, the code will first be tranpiled to es5 then get minified (the minification tool only understands es5. For now.)
 - You can open devtools and open type-script tag to see the injected javascript.
 - If you get an error. Try to run without setting minify to true. I'm still looking for a good es6+ compliant tool that runs in the browser.
-- The minification tool is large. It is loaded dynamically loaded when you set minify to true. I am still in the process of testing to see the tool actually improves performance.
+- The minification tool is large, therfore it is loaded dynamically when you set minify to true. I am still in the process of testing to see the tool actually improves performance.
 
 ### The Transpiler
 
