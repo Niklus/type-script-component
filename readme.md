@@ -2,9 +2,8 @@
 
 # type-script web component
 
-This is a Web Component that lets you run typescript on the browser. Just like any other script tag, you
-link your typescript file and it will run on the browser. The component uses the official typescript transpiler - It does all the transpilation behind the scenes and also minifies the javascript if you set the minification option to true. To see this in action open up devtools and check the typescript tags to see the
-injected Javascript.
+This is a Web Component that lets you run typescript on the browser.
+Just like any other script tag, you link your typescript file and it will run in the browser. The component uses the official typescript transpiler - It does all the transpilation behind the scenes and also minifies the javascript - if you set the minification option to true. To see this in action open up devtools and check the typescript tags to see the injected Javascript.
 
 ```html
 <type-script src="app.ts" minify="true"></type-script>
@@ -13,7 +12,7 @@ injected Javascript.
 ### Add the following script tag in the head of your .html page. The type should be module
 
 ```html
-<script type="module" src="https://unpkg.com/type-script-webcomponent@0.0.6/dist/type-script-component/type-script-component.esm.js"></script>
+<script type="module" src="https://unpkg.com/type-script-webcomponent@0.0.7/dist/type-script-component/type-script-component.esm.js"></script>
 ```
 
 ### Then in your html
@@ -38,6 +37,7 @@ injected Javascript.
 - The code is not minified by default and the target is es6. If you choose to minify by setting minify to true, the code will first be tranpiled to es5 then get minified (the minification tool only understands es5. For now.)
 - You can open devtools and open type-script tag to see the injected javascript.
 - If you get an error. Try to run without setting minify to true. I'm still looking for a good es6+ compliant tool that runs in the browser.
+- The minification tool is large. It is loaded dynamically loaded when you set minify to true. I am still in the process of testing to see the tool actually improves performance.
 
 ### The Transpiler
 
@@ -51,7 +51,7 @@ injected Javascript.
 
 ### The Script tag
 
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/type-script-webcomponent@0.0.6/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type='module' src='https://unpkg.com/type-script-webcomponent@0.0.7/dist/type-script-component/type-script-component.esm.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules

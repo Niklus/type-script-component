@@ -1,6 +1,5 @@
 import { Component, Prop, Element } from '@stencil/core';
 import Dexie from 'dexie';
-import { UglifyJS } from '../../utils/uglify';
 
 @Component({
   tag: 'type-script',
@@ -93,7 +92,14 @@ export class TypeScript {
         });
 
         const tag = document.createElement('script');
-        tag.textContent = this.minify === 'true' ? UglifyJS.minify(jsCode).code : jsCode;
+
+        if (this.minify === 'true') {
+          import('../../utils/uglify').then(utils => {
+            tag.textContent = utils.UglifyJS.minify(jsCode).code;
+          });
+        } else {
+          tag.textContent = jsCode;
+        }
 
         this.el.append(tag);
       });
